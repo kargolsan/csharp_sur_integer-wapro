@@ -1,4 +1,5 @@
-﻿/.vs
+/.vs
 /packages
-/SUR/bin/Debug
-/SUR/bin/Release
+/SUR Integer WAPRO/bin/Debug
+/SUR Integer WAPRO/bin/Release
+/SUR Integer WAPRO/publish

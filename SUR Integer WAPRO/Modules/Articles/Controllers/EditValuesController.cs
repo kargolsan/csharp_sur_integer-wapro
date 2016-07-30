@@ -116,6 +116,8 @@ namespace SUR_Integer_WAPRO.Modules.Articles.Controllers
 
             foreach (DataGridViewRow row in _articlesView.dgvArticles.SelectedRows)
             {
+                if (findValue == "") { continue;  }
+
                 string oldValue = (string)row.Cells[col].Value;
 
                 string tempNewValue = oldValue.Replace(findValue, changeValue);

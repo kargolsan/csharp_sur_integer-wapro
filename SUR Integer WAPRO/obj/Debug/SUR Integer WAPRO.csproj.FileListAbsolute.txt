@@ -12,3 +12,7 @@ C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAP
 C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Debug\SUR_Integer_WAPRO.Modules.Articles.Views.ArticlesView.resources
 C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Debug\SUR_Integer_WAPRO.Modules.Articles.Views.AddValuesView.resources
 C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Debug\SUR_Integer_WAPRO.Modules.Articles.Views.EditValuesView.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\bin\Debug\SUR Integer WAPRO.exe.manifest
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\bin\Debug\SUR Integer WAPRO.application
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Debug\SUR Integer WAPRO.exe.manifest
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Debug\SUR Integer WAPRO.application

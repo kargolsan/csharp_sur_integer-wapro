@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="SUR_Integer_WAPRO.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <connectionStrings />
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+    <userSettings>
+        <SUR_Integer_WAPRO.Properties.Settings>
+            <setting name="WFMAG_DATASOURCE" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="WFMAG_DATABASE" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="WFMAG_USERNAME" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="WFMAG_PASSWORD" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="WFMAG_CONNECTIONSTRING_PATTERN" serializeAs="String">
+                <value>Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}</value>
+            </setting>
+            <setting name="WFMAGConnectionString" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="CONTRACTORS_AUTOSORT" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="ARTICLES_AUTOSORT" serializeAs="String">
+                <value>False</value>
+            </setting>
+        </SUR_Integer_WAPRO.Properties.Settings>
+    </userSettings>
+</configuration>

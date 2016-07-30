@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SUR Integer WAPRO.exe" version="1.0.0.0" publicKeyToken="9914eb341ad0732c" language="pl-PL" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="app.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SUR Integer WAPRO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SUR Integer WAPRO.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SUR Integer WAPRO.exe" size="2679304">
+      <assemblyIdentity name="SUR Integer WAPRO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nXydtSRDsZZxW47pfqmsMPPL5P17kpuYSPAFer5X3BI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="app.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S6MhSXpSiIyGNiLnI2cBxMglUywIBSe/sZWnfzBCVSM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SUR Integer WAPRO.exe.config" size="1938">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zvEiC1xC1+wEeIGGtKbvnponSiSCges6eOCY1VFQZIY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-N8IDKPJ\Karol Golec" issuerKeyHash="88dc50017f7bc7e0f11b45ca98c2d0fc67af1f4d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>D27YA+iUo+w9X+Ffbu6O+iQE4jArVvHAasrTb8uhnIM=</DigestValue></Reference></SignedInfo><SignatureValue>GsFPZJ41+1M+2EnxYSGYcZ16y2wstSGgjSblvpCPAM0ZSUGo1Ne06d2gnJcxvY6GPKc151RGekztu3ZrFnm0ppHD6ZOotxHaM8HHItD0lsS0kY24wKGHmukN+S+S+QdLRD1FJGa/iNWehspT8CpojZgnUsLThsuy2y1AKKqcwGA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yomdZ348qqHJ7gkoagV2/HFRyyh1p4WBn0s7AEIBRQkKaS7IA7JKIiH8NbJmbXi0VIeKnhgPyb257nm9tUARHY/R8RamYzQweE06E2ch3dVW7D2PLcP+q1cnBqafPqxBS/3vT3f99RwcAGNiB3YD4MxG6NAEEGXnFIWJdsjLJEE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="839ca1cb6fd3ca6ac0f1562b30e20424fa8eee6e5fe15f3deca394e803d86e0f" Description="" Url=""><as:assemblyIdentity name="SUR Integer WAPRO.exe" version="1.0.0.0" publicKeyToken="9914eb341ad0732c" language="pl-PL" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-N8IDKPJ\Karol Golec</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bBFn+Ag8BZWBr63BX+9HP/1Ucetvb0TPdbQJ7a2NV7I=</DigestValue></Reference></SignedInfo><SignatureValue>ehFQhBdJolS71kjEsUpv9XUfoDggsNbWPoB27OS8N9N0sYn2utI40PJkDkCavD99zHJ0t8ooodeQHmI+bCwkFvyAqT+Dnb0ybLhxlrHkWf1XyDmGu0QCXo14QV1OrfCkPjcmjARqAOp4ncIlmFtEPD95bssO0nnVmDmcwABRnh8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yomdZ348qqHJ7gkoagV2/HFRyyh1p4WBn0s7AEIBRQkKaS7IA7JKIiH8NbJmbXi0VIeKnhgPyb257nm9tUARHY/R8RamYzQweE06E2ch3dVW7D2PLcP+q1cnBqafPqxBS/3vT3f99RwcAGNiB3YD4MxG6NAEEGXnFIWJdsjLJEE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICBTCCAW6gAwIBAgIQG9QJHOuPDp1FzVpEevR5czANBgkqhkiG9w0BAQsFADBBMT8wPQYDVQQDHjYARABFAFMASwBUAE8AUAAtAE4AOABJAEQASwBQAEoAXABLAGEAcgBvAGwAIABHAG8AbABlAGMwHhcNMTYwNzMwMDk1MzQ5WhcNMTcwNzMwMTU1MzQ5WjBBMT8wPQYDVQQDHjYARABFAFMASwBUAE8AUAAtAE4AOABJAEQASwBQAEoAXABLAGEAcgBvAGwAIABHAG8AbABlAGMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMqJnWd+PKqhye4JKGoFdvxxUcsodaeFgZ9LOwBCAUUJCmkuyAOySiIh/DWyZm14tFSHip4YD8m9ue55vbVAER2P0fEWpmM0MHhNOhNnId3VVuw9jy3D/qtXJwamnz6sQUv97093/fUcHABjYgd2A+DMRujQBBBl5xSFiXbIyyRBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAZj0j4YMo3kCw+mEoijb4OHnOK6hT5L31eC9PDa7KwEjxgl1anfPXAzZaUlmpTox7jVdAGrdeuMpj3rIfIMoIOFM771p2idHsKnQ9lI2pvmf1X+d+apbVntU462f+i9FVnWL3vr4PhrmA/V+ztzsP/ST76lL/y7qjHMn2i704V7A=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

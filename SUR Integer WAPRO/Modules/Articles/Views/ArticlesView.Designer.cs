@@ -35,6 +35,7 @@
             this.menuArticles = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuDgvSelectAll = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDgvAddValues = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuDgvEditValues = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDgvUpdateDatabase = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnRefreshTable = new System.Windows.Forms.Button();
@@ -51,10 +52,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuDgvEditValues = new System.Windows.Forms.ToolStripMenuItem();
+            this.WaitIcon = new System.Windows.Forms.PictureBox();
+            this.PleaseWait = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticles)).BeginInit();
             this.menuArticles.SuspendLayout();
             this.panelSave.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WaitIcon)).BeginInit();
+            this.PleaseWait.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvArticles
@@ -96,7 +101,7 @@
             this.menuDgvUpdateDatabase});
             this.menuArticles.Name = "menuContractors";
             this.menuArticles.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuArticles.Size = new System.Drawing.Size(321, 114);
+            this.menuArticles.Size = new System.Drawing.Size(321, 92);
             // 
             // menuDgvSelectAll
             // 
@@ -113,6 +118,14 @@
             this.menuDgvAddValues.Size = new System.Drawing.Size(320, 22);
             this.menuDgvAddValues.Text = "Dodaj ciąg znaków do zaznaczonych wierszów";
             this.menuDgvAddValues.Click += new System.EventHandler(this.menuDgvAddValues_Click);
+            // 
+            // menuDgvEditValues
+            // 
+            this.menuDgvEditValues.Image = ((System.Drawing.Image)(resources.GetObject("menuDgvEditValues.Image")));
+            this.menuDgvEditValues.Name = "menuDgvEditValues";
+            this.menuDgvEditValues.Size = new System.Drawing.Size(320, 22);
+            this.menuDgvEditValues.Text = "Edytuj ciąg znaków do zaznaczonych wierszów";
+            this.menuDgvEditValues.Click += new System.EventHandler(this.menuDgvEditValues_Click);
             // 
             // menuDgvUpdateDatabase
             // 
@@ -214,6 +227,7 @@
             // 
             // panelSave
             // 
+            this.panelSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panelSave.Controls.Add(this.label5);
             this.panelSave.Controls.Add(this.label6);
             this.panelSave.Controls.Add(this.label3);
@@ -223,7 +237,7 @@
             this.panelSave.Controls.Add(this.label12);
             this.panelSave.Location = new System.Drawing.Point(3, 490);
             this.panelSave.Name = "panelSave";
-            this.panelSave.Size = new System.Drawing.Size(1035, 38);
+            this.panelSave.Size = new System.Drawing.Size(832, 38);
             this.panelSave.TabIndex = 14;
             this.panelSave.Visible = false;
             // 
@@ -281,19 +295,45 @@
             this.label1.Size = new System.Drawing.Size(20, 20);
             this.label1.TabIndex = 14;
             // 
-            // menuDgvEditValues
+            // WaitIcon
             // 
-            this.menuDgvEditValues.Image = ((System.Drawing.Image)(resources.GetObject("menuDgvEditValues.Image")));
-            this.menuDgvEditValues.Name = "menuDgvEditValues";
-            this.menuDgvEditValues.Size = new System.Drawing.Size(320, 22);
-            this.menuDgvEditValues.Text = "Edytuj ciąg znaków do zaznaczonych wierszów";
-            this.menuDgvEditValues.Click += new System.EventHandler(this.menuDgvEditValues_Click);
+            this.WaitIcon.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.WaitIcon.Image = ((System.Drawing.Image)(resources.GetObject("WaitIcon.Image")));
+            this.WaitIcon.Location = new System.Drawing.Point(87, 44);
+            this.WaitIcon.Name = "WaitIcon";
+            this.WaitIcon.Size = new System.Drawing.Size(24, 23);
+            this.WaitIcon.TabIndex = 15;
+            this.WaitIcon.TabStop = false;
+            // 
+            // PleaseWait
+            // 
+            this.PleaseWait.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PleaseWait.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PleaseWait.Controls.Add(this.label7);
+            this.PleaseWait.Controls.Add(this.WaitIcon);
+            this.PleaseWait.Location = new System.Drawing.Point(460, 212);
+            this.PleaseWait.Name = "PleaseWait";
+            this.PleaseWait.Size = new System.Drawing.Size(200, 87);
+            this.PleaseWait.TabIndex = 16;
+            this.PleaseWait.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(50, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 18);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Proszę czekać";
             // 
             // ArticlesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 528);
+            this.Controls.Add(this.PleaseWait);
             this.Controls.Add(this.panelSave);
             this.Controls.Add(this.ckbAutoSort);
             this.Controls.Add(this.btnSort);
@@ -304,7 +344,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dgvArticles);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(800, 500);
+            this.MinimumSize = new System.Drawing.Size(950, 551);
             this.Name = "ArticlesView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Artykuły";
@@ -313,6 +353,9 @@
             this.menuArticles.ResumeLayout(false);
             this.panelSave.ResumeLayout(false);
             this.panelSave.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WaitIcon)).EndInit();
+            this.PleaseWait.ResumeLayout(false);
+            this.PleaseWait.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,12 +364,8 @@
         #endregion
 
         public System.Windows.Forms.DataGridView dgvArticles;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnRefreshTable;
         public System.Windows.Forms.Label lblTitle;
         public System.Windows.Forms.CheckBox ckbAutoSort;
-        private System.Windows.Forms.Button btnSort;
-        private System.Windows.Forms.TextBox txtSort;
         public System.Windows.Forms.ComboBox cmbSort;
         private System.Windows.Forms.ContextMenuStrip menuArticles;
         private System.Windows.Forms.ToolStripMenuItem menuDgvSelectAll;
@@ -341,5 +380,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem menuDgvUpdateDatabase;
         private System.Windows.Forms.ToolStripMenuItem menuDgvEditValues;
+        public System.Windows.Forms.PictureBox WaitIcon;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Panel PleaseWait;
+        public System.Windows.Forms.Button btnClose;
+        public System.Windows.Forms.Button btnRefreshTable;
+        public System.Windows.Forms.Button btnSort;
+        public System.Windows.Forms.TextBox txtSort;
     }
 }

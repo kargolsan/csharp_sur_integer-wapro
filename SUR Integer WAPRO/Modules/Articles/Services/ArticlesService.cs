@@ -238,42 +238,50 @@ namespace SUR_Integer_WAPRO.Modules.Articles.Services
         /// </summary>
         /// <param name="rows">selected rows in data grid view of articles</param>
         /// <returns>Contractors in table of linq</returns>
-        public async Task updateDatabase(DataGridView dgv)
+        public async Task<bool> updateDatabase(DataGridView dgv)
         {
-            DataGridViewSelectedRowCollection rows = dgv.SelectedRows;
-
-            int colId = dgv.Columns["ID_ARTYKULU"].Index;
-            int colName = dgv.Columns["NAZWA"].Index;
-            int colNameOriginal = dgv.Columns["NAZWA_ORYG"].Index;
-            int colName2 = dgv.Columns["NAZWA2"].Index;
-            int colIdCat = dgv.Columns["INDEKS_KATALOGOWY"].Index;
-            int colIdCommercial = dgv.Columns["INDEKS_HANDLOWY"].Index;
-
-            TablesDataContext dbContext = new TablesDataContext(ConnectionService.getConnectionString());
-
-            foreach (DataGridViewRow row in rows)
+            try
             {
-              
+                DataGridViewSelectedRowCollection rows = dgv.SelectedRows;
 
-                 await Task.Run(() => {
-                    ARTYKUL article = dbContext.ARTYKULs.SingleOrDefault(x => x.ID_ARTYKULU == (decimal)row.Cells[colId].Value);
-                    article.NAZWA = (string)row.Cells[colName].Value;
-                    article.NAZWA_ORYG = (string)row.Cells[colNameOriginal].Value;
-                    article.NAZWA2 = (string)row.Cells[colName2].Value;
-                    article.INDEKS_KATALOGOWY = (string)row.Cells[colIdCat].Value;
-                    article.INDEKS_HANDLOWY = (string)row.Cells[colIdCommercial].Value;
-                    
+                int colId = dgv.Columns["ID_ARTYKULU"].Index;
+                int colName = dgv.Columns["NAZWA"].Index;
+                int colNameOriginal = dgv.Columns["NAZWA_ORYG"].Index;
+                int colName2 = dgv.Columns["NAZWA2"].Index;
+                int colIdCat = dgv.Columns["INDEKS_KATALOGOWY"].Index;
+                int colIdCommercial = dgv.Columns["INDEKS_HANDLOWY"].Index;
+
+                TablesDataContext dbContext = new TablesDataContext(ConnectionService.getConnectionString());
+
+                foreach (DataGridViewRow row in rows)
+                {
+
+
+                    await Task.Run(() => {
+                        ARTYKUL article = dbContext.ARTYKULs.SingleOrDefault(x => x.ID_ARTYKULU == (decimal)row.Cells[colId].Value);
+                        article.NAZWA = (string)row.Cells[colName].Value;
+                        article.NAZWA_ORYG = (string)row.Cells[colNameOriginal].Value;
+                        article.NAZWA2 = (string)row.Cells[colName2].Value;
+                        article.INDEKS_KATALOGOWY = (string)row.Cells[colIdCat].Value;
+                        article.INDEKS_HANDLOWY = (string)row.Cells[colIdCommercial].Value;
+
+                    });
+
+                }
+
+                await Task.Run(() => {
+                    dbContext.SubmitChanges();
+
                 });
                 
+                return true;
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Błąd podczas aktualizacji danych. Szczaegóły błędu:\n{0}", ex.Message), "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
-
-            await Task.Run(() => {
-                dbContext.SubmitChanges();
-                
-            });
-
-            MessageBox.Show("Poprawnie zaktualizowano dane", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+           
         }
 
     }

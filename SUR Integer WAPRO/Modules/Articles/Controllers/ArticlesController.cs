@@ -31,6 +31,11 @@ namespace SUR_Integer_WAPRO.Modules.Articles.Controllers
         private EditValuesController _editValuesController;
 
         /// <summary>
+        /// For db context is busy
+        /// </summary>
+        private bool _dbContextIsBusy;
+
+        /// <summary>
         /// Constructor
         /// </summary>
         public ArticlesController()
@@ -39,6 +44,24 @@ namespace SUR_Integer_WAPRO.Modules.Articles.Controllers
             _mdiService = new MDIService();
             _addValuesController = new AddValuesController();
             _editValuesController = new EditValuesController();
+        }
+
+        /// <summary>
+        /// Get and Set db context is busy
+        /// </summary>
+        public bool DbContextIsBusy
+        {
+            get
+            {
+                return _dbContextIsBusy;
+            }
+            set
+            {
+                _dbContextIsBusy = value;
+
+                ArticlesView _articlesView = _mdiService.findChildView<ArticlesView>();
+                _articlesView.lockControls(!value);
+            }
         }
 
         /// <summary>
@@ -182,13 +205,24 @@ namespace SUR_Integer_WAPRO.Modules.Articles.Controllers
         /// <param name="dgv">data grid view with articles</param>
         public async void updateDatabase(DataGridView dgv)
         {
+
             ArticlesView _articlesView = _mdiService.findChildView<ArticlesView>();
 
-            _articlesView.Cursor = Cursors.WaitCursor;
+            DbContextIsBusy = true;
 
-            await _articlesService.updateDatabase(dgv);
+            _articlesView.PleaseWait.Visible = true;
 
-            _articlesView.Cursor = Cursors.Default;
+            bool result = await _articlesService.updateDatabase(dgv);
+
+            _articlesView.PleaseWait.Visible = false;
+
+            if (result)
+            {
+                _articlesView.panelSave.Visible = false;
+                MessageBox.Show("Poprawnie zaktualizowano dane", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+            DbContextIsBusy = false;
 
         }
 

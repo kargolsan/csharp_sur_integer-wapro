@@ -136,7 +136,7 @@
             this.MinimumSize = new System.Drawing.Size(254, 207);
             this.Name = "EditValuesView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Edutyj ciąg znaków";
+            this.Text = "Edytuj ciąg znaków";
             this.Shown += new System.EventHandler(this.EditValuesView_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

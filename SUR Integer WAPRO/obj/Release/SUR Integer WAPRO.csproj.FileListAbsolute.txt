@@ -12,3 +12,7 @@ C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAP
 C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.exe
 C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.pdb
 C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.csprojResolveAssemblyReference.cache
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\bin\Release\SUR Integer WAPRO.exe.manifest
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\bin\Release\SUR Integer WAPRO.application
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.exe.manifest
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.application

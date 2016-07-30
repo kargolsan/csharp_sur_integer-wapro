@@ -254,5 +254,19 @@ namespace SUR_Integer_WAPRO.Modules.Articles.Views
             }
             _articlesController.editValues(dgvArticles);
         }
+
+        /// <summary>
+        /// Lock choose controls
+        /// </summary>
+        /// <param name="value">true if unlock, false if lock</param>
+        public void lockControls(bool value)
+        {
+            dgvArticles.Enabled = value;
+            cmbSort.Enabled = value;
+            txtSort.Enabled = value;
+            btnSort.Enabled = value;
+            btnRefreshTable.Enabled = value;
+            btnClose.Enabled = value;
+        }
     }
 }
