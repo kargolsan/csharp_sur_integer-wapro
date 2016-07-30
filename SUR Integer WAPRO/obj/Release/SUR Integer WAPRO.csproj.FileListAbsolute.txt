@@ -1,0 +1,14 @@
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\bin\Release\SUR Integer WAPRO.exe.config
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\bin\Release\SUR Integer WAPRO.exe
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\bin\Release\SUR Integer WAPRO.pdb
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR_Integer_WAPRO.Modules.Articles.Views.EditValuesView.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR_Integer_WAPRO.Modules.Articles.Views.AddValuesView.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR_Integer_WAPRO.Modules.Articles.Views.ArticlesView.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR_Integer_WAPRO.Modules.Authorization.Views.AuthenticateView.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR_Integer_WAPRO.Modules.ContainerMDI.Views.MDIView.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR_Integer_WAPRO.Modules.Contractors.Views.ContractorsView.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR_Integer_WAPRO.Properties.Resources.resources
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.csproj.GenerateResource.Cache
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.exe
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.pdb
+C:\Users\Karol Golec\Desktop\sur_integer_wapro\SUR Integer WAPRO\SUR Integer WAPRO\obj\Release\SUR Integer WAPRO.csprojResolveAssemblyReference.cache
